@@ -13,7 +13,7 @@ import static java.time.Clock.system;
  * arithmetic operations based on user input
  * execute the code check the output
  * @author sivagamasrinivasan
- * 
+ * @author sookraja
  */
 public class Arithmetic 
 {
@@ -24,10 +24,12 @@ public class Arithmetic
     public static void main(String[] args) 
     {
        
-        ArithmeticBase r= new ArithmeticBase();
-        Scanner in= new Scanner(System.in);
-        int n= in.nextInt();
-        int m= in.nextInt();
+        ArithmeticBase r = new ArithmeticBase();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int n = in.nextInt();
+        System.out.print("Enter another integer: ");
+        int m = in.nextInt();
         double result = r.calculate(m,n);
         System.out.println("result :" +result); 
     
